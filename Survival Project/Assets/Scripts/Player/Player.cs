@@ -21,20 +21,16 @@ public class Player : MonoBehaviour
         _health = _maxHealth;
     }
 
-    private void FixedUpdate()
+    public void MovePlayer()
     {
-        float x = Input.GetAxisRaw("Horizontal");
-        _moveDelta = new Vector3(x, 0, 0);
+        _moveDelta = new Vector3(1, 0, 0);
         transform.Translate(_moveDelta.x * Time.fixedDeltaTime * _movementSpeed, 0, 0);
+        _animator.SetFloat("Speed", 1f);
+    }
 
-        if(Mathf.Abs(x) > 0)
-        {
-            _animator.SetFloat("Speed", 1f);
-        }
-        else
-        {
-            _animator.SetFloat("Speed", -1f);
-        }
+    public void StopPlayerRunAnimation()
+    {
+        _animator.SetFloat("Speed", -1f);
     }
 
     public bool AttackEnemy()

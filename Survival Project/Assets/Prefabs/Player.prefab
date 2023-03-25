@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2790722863205758268}
   - component: {fileID: 2790722863205758267}
   - component: {fileID: 8335189408167403740}
+  - component: {fileID: -5065332634179730461}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -55,7 +56,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -137,3 +138,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _flashMaterial: {fileID: 2100000, guid: 9db875e66a166a346914cc614515cb1d, type: 2}
   _flashDuration: 0.2
+--- !u!114 &-5065332634179730461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2790722863205758271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd3edd3b023bb604c9731d55b6ea4056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _size: 8
+  _slots:
+  - _state:
+      _item: {fileID: 0}
+      _numberOfItems: 0
+  - _state:
+      _item: {fileID: 0}
+      _numberOfItems: 0
+  - _state:
+      _item: {fileID: 0}
+      _numberOfItems: 0
+  - _state:
+      _item: {fileID: 0}
+      _numberOfItems: 0
+  - _state:
+      _item: {fileID: 0}
+      _numberOfItems: 0
+  - _state:
+      _item: {fileID: 0}
+      _numberOfItems: 0
+  - _state:
+      _item: {fileID: 0}
+      _numberOfItems: 0
+  - _state:
+      _item: {fileID: 0}
+      _numberOfItems: 0

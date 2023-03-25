@@ -12,9 +12,7 @@ public class GameStateManager : MonoBehaviour
 
     void Start()
     {
-        //_currentState = waitState;
-        //_currentState.EnterState(this);
-        SwitchState(fightState);
+        SwitchState(waitState);
     }
 
     void Update()
@@ -36,7 +34,19 @@ public class GameStateManager : MonoBehaviour
 
     public bool CurrentStateIsFight()
     {
-        if (_currentState == fightState)
+        if (_currentState is GameFightState)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool CurrentStateIsWait()
+    {
+        if (_currentState is GameWaitState)
         {
             return true;
         }

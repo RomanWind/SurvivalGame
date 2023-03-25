@@ -46,6 +46,7 @@ public class Enemy : MonoBehaviour
     {
         _isEnemyAlive = false;
         _animator.SetTrigger("EnemyIsDead");
+
         //give rewards
         //GiveRewards()
     }

@@ -12,7 +12,7 @@ TagManager:
   - Tilemap
   - Water
   - UI
-  - 
+  - Items
   - 
   - 
   - 
@@ -47,4 +47,7 @@ TagManager:
     locked: 0
   - name: Actors
     uniqueID: 830918989
+    locked: 0
+  - name: Items
+    uniqueID: 4126492807
     locked: 0
