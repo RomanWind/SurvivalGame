@@ -16,3 +16,5 @@ MonoBehaviour:
   _isStackable: 0
   _inGameSprite: {fileID: 21300000, guid: 1689d635109490e41888910ce75269c6, type: 3}
   _iuSprite: {fileID: 21300000, guid: 1689d635109490e41888910ce75269c6, type: 3}
+  _attackBonus: 5
+  _defenceBonus: 0

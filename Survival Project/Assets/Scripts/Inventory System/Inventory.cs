@@ -6,6 +6,7 @@ namespace InventorySystem
 {
     public class Inventory : MonoBehaviour
     {
+        [Header("Inventory")]
         [SerializeField] private int _size = 8;
         [SerializeField] private List<InventorySlot> _slots;
         private int _activeSlotIndex;

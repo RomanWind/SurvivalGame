@@ -17,7 +17,6 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("Begin");
         _parentName = transform.parent.name;
         _originalParent = transform.parent;
         transform.SetParent(transform.root);
@@ -34,7 +33,6 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("End");
         transform.SetParent(_originalParent);
         transform.position = _originalParent.position;
         transform.localScale = Vector3.one;

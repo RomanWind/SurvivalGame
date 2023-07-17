@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
             }
             if (_enemies[_currentEnemyIndex].GetEnemyHealth() <= 0 && _currentEnemyIndex == _enemiesAmount - 1)
             {
-                _itemToSpawn = 0;
+                _itemToSpawn = 1;
                 if (_inventory.CanAcceptItem(_gameItems[_itemToSpawn].Stack))
                 {
                     _inventory.AddItem(SpawnLoot(_itemToSpawn).GetComponent<GameItem>().Pick());
